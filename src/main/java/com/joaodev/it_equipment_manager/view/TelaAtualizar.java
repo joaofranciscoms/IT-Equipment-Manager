@@ -9,10 +9,6 @@ import com.joaodev.it_equipment_manager.model.TipoEquipamento;
 import com.joaodev.it_equipment_manager.service.EquipamentoService;
 import java.util.UUID;
 
-/**
- *
- * @author bioni
- */
 public class TelaAtualizar extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(TelaAtualizar.class.getName());
@@ -98,7 +94,7 @@ public class TelaAtualizar extends javax.swing.JFrame {
                                 .addComponent(fldAtualizarFabricante, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(fldAtualizarModelo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(256, 256, 256)
+                        .addGap(331, 331, 331)
                         .addComponent(btAtualizar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btLimparAtualizar)))
@@ -123,11 +119,11 @@ public class TelaAtualizar extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtAtualizarTipo)
                     .addComponent(fldAtualizarTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btAtualizar)
                     .addComponent(btLimparAtualizar))
-                .addGap(21, 21, 21))
+                .addGap(22, 22, 22))
         );
 
         pack();

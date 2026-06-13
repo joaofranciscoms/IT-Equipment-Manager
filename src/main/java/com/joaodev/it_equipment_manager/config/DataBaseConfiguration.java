@@ -35,7 +35,7 @@ public class DataBaseConfiguration {
 
         config.setMaximumPoolSize(10);
         config.setMinimumIdle(1);
-        config.setPoolName("hikari-library-api");
+        config.setPoolName("hikari-manager-api");
         config.setMaxLifetime(600000);
         config.setConnectionTimeout(100000);
         config.setConnectionTestQuery("select 1");

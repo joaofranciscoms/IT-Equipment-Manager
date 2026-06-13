@@ -94,8 +94,17 @@ A partir desse momento, você já pode utilizar o sistema para:
 
 - cadastrar equipamentos;
 - listar registros;
+- excluir equipamentos;
+
+![Principal](screenshots/Principal.png)
+
 - atualizar informações;
-- excluir equipamentos.
+
+![Atualizar](screenshots/Atualizar.png)
+
+- acompanhar as mudanças no banco de dados.
+
+![Select](screenshots/Select.png)
 
 ## Estrutura esperada do ambiente
 

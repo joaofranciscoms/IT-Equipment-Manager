@@ -15,7 +15,7 @@ public class Equipamento {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(name = "modelo", length = 50, nullable = false)
+    @Column(name = "modelo", length = 100, nullable = false)
     private String modelo;
 
     @Column(name = "fabricante", length = 100, nullable = false)
