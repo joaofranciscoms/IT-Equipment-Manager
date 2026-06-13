@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: it-equipment-manager
+  datasource:
+    url: jdbc:postgresql://localhost:5432/it-equipment-manager
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
