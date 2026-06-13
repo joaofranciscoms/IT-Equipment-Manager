@@ -21,7 +21,7 @@ Este projeto foi construído inicialmente utilizando o IntelliJ IDEA e posterior
 
 Como este é um projeto focado em **portfólio e aprendizado**, as configurações de acesso ao banco de dados no arquivo `application.yml` foram mantidas intencionalmente com os valores padrão do PostgreSQL (`user: postgres` / `password: postgres`).
 
-O objetivo desta abordagem é tornar o projeto **"Plug and Play"**, facilitando para que recrutadores e outros desenvolvedores consigam clonar e rodar a aplicação localmente de forma imediata, sem a necessidade de criar configurações complexas de ambiente.
+O objetivo desta abordagem é tornar o projeto **"Plug and Play"**, facilitando para que seja possível clonar e rodar a aplicação localmente de forma imediata, sem a necessidade de criar configurações complexas de ambiente.
 
 ### 🌐 No Cenário Real (Produção)
 Tenho total ciência de que expor credenciais de acesso em repositórios públicos é uma prática inaceitável em ambientes comerciais e produtivos. Em um cenário real de mercado, a segurança seria garantida através de:
