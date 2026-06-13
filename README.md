@@ -23,7 +23,7 @@ Como este é um projeto focado em **portfólio e aprendizado**, as configuraçõ
 
 O objetivo desta abordagem é tornar o projeto **"Plug and Play"**, permitindo que seja possível clonar e rodar a aplicação localmente de forma imediata, sem a necessidade de criar configurações complexas de ambiente.
 
-### 🌐 No Cenário Real (Produção)
+### 🌐 No Cenário Real
 Tenho total ciência de que expor credenciais de acesso em repositórios públicos é uma prática inaceitável em ambientes comerciais e produtivos. Em um cenário real de mercado, a segurança seria garantida através de:
 
 1. **Variáveis de Ambiente:** Substituição das senhas explícitas por referências dinâmicas no Spring Boot (ex: `${DB_PASSWORD}`), injetadas diretamente pelo servidor de hospedagem ou container (Docker/Kubernetes).
