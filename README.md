@@ -17,6 +17,21 @@ Este projeto foi construído inicialmente utilizando o IntelliJ IDEA e posterior
 
 ---
 
+## 🔒 Nota sobre Segurança e Boas Práticas (Credenciais do Banco)
+
+Como este é um projeto focado em **portfólio e aprendizado**, as configurações de acesso ao banco de dados no arquivo `application.yml` foram mantidas intencionalmente com os valores padrão do PostgreSQL (`user: postgres` / `password: postgres`).
+
+O objetivo desta abordagem é tornar o projeto **"Plug and Play"**, facilitando para que recrutadores e outros desenvolvedores consigam clonar e rodar a aplicação localmente de forma imediata, sem a necessidade de criar configurações complexas de ambiente.
+
+### 🌐 No Cenário Real (Produção)
+Tenho total ciência de que expor credenciais de acesso em repositórios públicos é uma prática inaceitável em ambientes comerciais e produtivos. Em um cenário real de mercado, a segurança seria garantida através de:
+
+1. **Variáveis de Ambiente:** Substituição das senhas explícitas por referências dinâmicas no Spring Boot (ex: `${DB_PASSWORD}`), injetadas diretamente pelo servidor de hospedagem ou container (Docker/Kubernetes).
+2. **Gerenciadores de Secrets:** Utilização de ferramentas robustas de cofres de senhas, como *HashiCorp Vault*, *AWS Secrets Manager* ou *Azure Key Vault*.
+3. **Arquivo `.gitignore`:** Isolamento de qualquer arquivo com dados sensíveis de produção para que nunca fossem rastreados pelo Git.
+
+---
+
 # 🛠️ Como Executar o Projeto Localmente
 
 Siga o passo a passo abaixo para rodar a aplicação na sua máquina de forma rápida e prática.
