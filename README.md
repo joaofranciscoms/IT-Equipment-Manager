@@ -1,4 +1,4 @@
-# IT Equipment Manager 🖥️💼
+# IT Equipment Manager 
 
 O **IT Equipment Manager** é um sistema Desktop desenvolvido para realizar o gerenciamento completo (CRUD) de equipamentos de TI. O grande diferencial deste projeto está na sua arquitetura híbrida: ele utiliza uma interface gráfica nativa para Desktop com **Java Swing (JFrame)**, mas delega toda a camada de persistência e gerenciamento de banco de dados para o ecossistema do **Spring Boot com Spring Data JPA**.
 
@@ -6,7 +6,7 @@ Este projeto foi construído inicialmente utilizando o IntelliJ IDEA e posterior
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Java 21 (LTS)** 
 * **Java Swing (JFrame):** Para a construção da interface gráfica do usuário.
@@ -17,13 +17,13 @@ Este projeto foi construído inicialmente utilizando o IntelliJ IDEA e posterior
 
 ---
 
-## 🔒 Nota sobre Segurança e Boas Práticas (Credenciais do Banco)
+## Nota sobre Segurança e Boas Práticas (Credenciais do Banco)
 
 Como este é um projeto focado em **portfólio e aprendizado**, as configurações de acesso ao banco de dados no arquivo `application.yml` foram mantidas intencionalmente com os valores padrão do PostgreSQL (`user: postgres` / `password: postgres`).
 
 O objetivo desta abordagem é tornar o projeto **"Plug and Play"**, permitindo clonar e rodar a aplicação localmente de forma imediata, sem a necessidade de criar configurações complexas de ambiente.
 
-### 🌐 No Cenário Real
+### No Cenário Real
 Tenho total ciência de que expor credenciais de acesso em repositórios públicos é uma prática inaceitável em ambientes comerciais e produtivos. Em um cenário real de mercado, a segurança seria garantida através de:
 
 1. **Variáveis de Ambiente:** Substituição das senhas explícitas por referências dinâmicas no Spring Boot (ex: `${DB_PASSWORD}`), injetadas diretamente pelo servidor de hospedagem ou container (Docker/Kubernetes).
@@ -32,7 +32,7 @@ Tenho total ciência de que expor credenciais de acesso em repositórios públic
 
 ---
 
-# 🛠️ Como Executar o Projeto Localmente
+# Como Executar o Projeto Localmente
 
 Siga o passo a passo abaixo para rodar a aplicação na sua máquina de forma rápida e prática.
 
@@ -141,7 +141,7 @@ Se a aplicação não iniciar, verifique:
 
 ---
 
-## 🗂️ Padronização e Regras de Negócio (Enum)
+## Padronização e Regras de Negócio (Enum)
 
 Para garantir a integridade dos dados e evitar cadastros incorretos, o campo **Tipo de Equipamento** é estritamente controlado por uma `Enum` (`TipoEquipamento`) no Java. Isso significa que o sistema só aceita e armazena os seguintes tipos homologados de hardware e rede:
 
@@ -153,9 +153,9 @@ Para garantir a integridade dos dados e evitar cadastros incorretos, o campo **T
 * 📡 **ACCESS_POINT**
 * 🛡️ **FIREWALL**
 
-> 💡 **Nota Técnica:** No banco de dados PostgreSQL, o Spring Data JPA está configurado para salvar essas opções como texto (`EnumType.STRING`), garantindo que o banco fique legível e de fácil manutenção.
+> **Nota Técnica:** No banco de dados PostgreSQL, o Spring Data JPA está configurado para salvar essas opções como texto (`EnumType.STRING`), garantindo que o banco fique legível e de fácil manutenção.
 
-## 🏗️ Boas Práticas e Padrões de Projeto (Destaque Técnico)
+## Boas Práticas e Padrões de Projeto (Destaque Técnico)
 
 Para garantir que a aplicação seja robusta, escalável e segura contra falhas em tempo de execução, foram aplicados conceitos avançados de arquitetura de software:
 
