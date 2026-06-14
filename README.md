@@ -8,7 +8,7 @@ Este projeto foi construído inicialmente utilizando o IntelliJ IDEA e posterior
 
 ## 🚀 Tecnologias Utilizadas
 
-* **Java 21** 
+* **Java 21 (LTS)** 
 * **Java Swing (JFrame):** Para a construção da interface gráfica do usuário.
 * **Spring Boot:** Framework base para a inversão de controle e injeção de dependências.
 * **Spring Data JPA / Hibernate:** Para o mapeamento objeto-relacional (ORM) e abstração das consultas ao banco de dados.
@@ -21,7 +21,7 @@ Este projeto foi construído inicialmente utilizando o IntelliJ IDEA e posterior
 
 Como este é um projeto focado em **portfólio e aprendizado**, as configurações de acesso ao banco de dados no arquivo `application.yml` foram mantidas intencionalmente com os valores padrão do PostgreSQL (`user: postgres` / `password: postgres`).
 
-O objetivo desta abordagem é tornar o projeto **"Plug and Play"**, permitindo que seja possível clonar e rodar a aplicação localmente de forma imediata, sem a necessidade de criar configurações complexas de ambiente.
+O objetivo desta abordagem é tornar o projeto **"Plug and Play"**, permitindo clonar e rodar a aplicação localmente de forma imediata, sem a necessidade de criar configurações complexas de ambiente.
 
 ### 🌐 No Cenário Real
 Tenho total ciência de que expor credenciais de acesso em repositórios públicos é uma prática inaceitável em ambientes comerciais e produtivos. Em um cenário real de mercado, a segurança seria garantida através de:
@@ -170,5 +170,3 @@ A camada de interface gráfica interage diretamente com as regras de negócio at
 * **`NoSuchElementException`:** Tratamento focado em operações onde um registro esperado não é localizado no banco.
 * **`DataIntegrityViolationException`:** Intercepta falhas de restrição do PostgreSQL (como violações de chaves únicas ou campos obrigatórios vazios), avisando que os dados já existem.
 * **`RuntimeException`:** Uma última barreira de proteção que captura qualquer falha inesperada de comunicação com o banco de dados, garantindo que o sistema continue aberto e funcionando mesmo se o banco cair.
-
----
